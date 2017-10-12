@@ -1,0 +1,133 @@
+// out: ./css/style.css, sourcemap: true, compress: true
+
+
+/* Style d'écriture */
+@styleD: Dancing Script;
+@styleP: Pacifico;
+@styleL: Lobster Two;
+@font-header : 'Nixie One', serif;
+@font-body : 'Open Sans Condensed', sans-serif;
+
+/* Palette de couleur */
+@white: #fff;
+@gray-light: #ff6e6f;
+@gray-dark: #343434;
+@gray-med: #666;
+@salmon-light: lightsalmon;
+@blue: lightblue;
+@orange-light: rgba(255, 94, 0, 0.61);
+@shadow: rgba(12, 3, 3, 0.92);
+@bla: black;
+
+header,
+nav,
+footer,
+div { width: 100%;}
+
+.header {
+  padding: 20px 0;
+  background: @orange-light;
+  font: normal 2em/normal @styleD;
+  color: #363636;
+  text-align: center;
+}
+
+nav {
+  border-bottom-style: solid;
+  margin: 0;
+  padding: 0;
+  background: @orange-light;
+  overflow: hidden;
+  ul {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+
+    li {
+      display: inline-block;
+      margin: 0 -4px;
+      padding: 5px 0;
+
+      a {
+        padding: 5px 20px;
+        font: normal 1em/normal @font-body;
+        color: @white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover,
+        &.active {
+          background: @gray-dark;
+        }
+      }
+    }
+  }
+}
+
+
+section {
+  margin: 0;
+  padding: 20px;
+  width: auto;
+  height:100%;
+  font: normal 1.6em/normal @font-body;
+
+  &#accueil,
+  &#bibliotheque {
+    background: @gray-dark;
+    color: @orange-light;
+  }
+
+  &#biographie{
+    background: @shadow;
+    color: @white;
+  }
+}
+
+h1 {
+  font-size: 3em;
+}
+
+footer {
+
+  padding: 20px;
+  background: @orange-light;
+  font: bold 2em @styleD;
+  color: #363636;
+  text-align: center;
+}
+
+.al, .el{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.al img{
+  border-radius: 15px;
+}
+.accu{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.Slideshow{
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  border: 3px solid ;
+  display: inline-flex;
+  justify-content: center;
+}
+.Slideshow ul {
+    /* 4 images donc 4 x 100% */
+   width: 400%;
+   height: 200px;
+   padding:0; margin:0;
+   list-style: none;
+}
+.Slideshow li{
+  float:left;
+}

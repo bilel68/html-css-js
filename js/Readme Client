@@ -1,0 +1,7 @@
+- Petit soucis de responsive quand on rétrécie la largeur de
+  la fenêtre à partir de 900px :
+    - Les images ne s'empilent pas
+    - Le texte se chevauche.
+
+A part ça, j'ai rien vu qui n'allait pas, ou alors ce n'était
+pas flagrant.
